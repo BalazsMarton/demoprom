@@ -201,6 +201,7 @@ footer.page-footer{
 			color: $primary-black;
 		}
 		li .collapsible-header{
+			line-height:4rem;
 			font-size: 2em;
 			background-color: transparent;
 			transition-duration: 1s;
@@ -234,6 +235,7 @@ footer.page-footer{
 			color: white;
 		}
 		li .collapsible-header{
+			line-height:4rem;
 			font-size: 2em;
 			background-color: transparent;
 			transition-duration: 1s;
@@ -254,5 +256,112 @@ footer.page-footer{
 	}
 	h5{
 		color: white;
+	}
+}
+/*PRODUCTION*/
+#production-content{
+	background-color: rgba(0,0,0,0.6);
+}
+#production-collapsible-wrap{
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	.collapsible{
+		border:none;
+		box-shadow: none;
+		li.active .collapsible-header{
+			color: white;
+		}
+		li .collapsible-header{
+			line-height:4rem;
+			font-size: 2em;
+			background-color: transparent;
+			transition-duration: 1s;
+			border:none;
+			color: rgba(255,255,255,0.6);
+		}
+		li .collapsible-body{
+			border:none;
+		}
+	}
+}
+
+#production-services-icon{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	img{
+		height:50px;
+	}
+	h5{
+		color: white;
+	}
+}
+/*DEVELOPMENT*/
+#development{
+	padding-bottom: 200px
+}
+#development-content{
+	background-color: rgba(255,255,255,0.6);
+}
+#development-collapsible-wrap{
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	.collapsible{
+		border:none;
+		box-shadow: none;
+		li.active .collapsible-header{
+			color: $primary-black;
+		}
+		li .collapsible-header{
+			line-height:4rem;
+			font-size: 2em;
+			background-color: transparent;
+			transition-duration: 1s;
+			border:none;
+			color: rgba(0,0,0,0.6);
+		}
+		li .collapsible-body{
+			border:none;
+		}
+	}
+}
+
+#development-services-icon{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	img{
+		height:50px;
+	}
+	h5{
+		color: $primary-black;
+	}
+}
+#iphone{
+	height:100px;
+	img{
+		height:250px;
+
+	}
+}
+
+/*WORKS*/
+#works{
+	background-color:#131927;
+	.row{
+		margin-bottom:0; 
+	}
+}
+
+ul.gallery{
+	margin:0;
+	li.col{
+		padding:0;
+		line-height: 0;
+	}
+}
+
+#works-nav{
+	ul li{
+		color:white;
+		display: inline-block;
 	}
 }

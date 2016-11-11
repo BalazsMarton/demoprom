@@ -27,3 +27,17 @@ document.addEventListener("turbolinks:load", function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
 });
+
+//Referenciák képszűrés
+$('html').on('click', '.image-filter', function () {
+    var imgShow = $(this).data('show');
+    $('.image-filter').removeClass('active');
+    $(this).addClass('active');
+
+    if (imgShow === 'all') {
+        $('.gallery-container .item').show();
+    } else {
+        $('.gallery-container .item').hide();
+        $('.gallery-container').find('.' + imgShow).show();
+    }
+});
