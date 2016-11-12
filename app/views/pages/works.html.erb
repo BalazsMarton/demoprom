@@ -2,45 +2,27 @@
 	<div class="container">
 		<div class="row center">
 		<div class="col s12 m12 l12" id="works-nav">
-			<ul>
-				<li>
-					<a class="image-filter" data-show="webdesign">
+			<ul id="">
+				<li class="filter" data-filter=".webdesign">
 					WEBDESIGN
-					</a>
 				</li>
-				<li>
-					<a class="image-filter" data-show="mobile">
+				<li class="filter" data-filter=".mobile">
 					MOBILE
-					</a>
 				</li>
-				<li>
-					<a class="image-filter" data-show="print">
+				<li class="filter" data-filter=".print">
 					PRINT
-					</a>
 				</li>
-				<li>
-					<a class="image-filter" data-show="production">
+				<li class="filter" data-filter=".production">
 					PRODUCTION
-					</a>
 				</li>
 			</ul>
 		</div>
 		</div>
 	</div>
 	<div class="gallery-container">
-	<ul class="row gallery">
-		<li class="col s12 m3 l3 item webdesign"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item print"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item mobile"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item webdesign"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-		<li class="col s12 m3 l3 item"><img class="responsive-img" src="img/work1.jpg" alt=""></li>
-	</ul>
+	<%= render 'pages/gallery' %>
 	</div>
 </div>
+<script>
+	$('.mixit-gallery').mixItUp();
+</script>

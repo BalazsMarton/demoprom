@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require materialize-sprockets
+//= require mixitup
 //= require_tree .
 
 document.addEventListener("turbolinks:load", function() {
@@ -26,18 +27,18 @@ document.addEventListener("turbolinks:load", function() {
       menuWidth: 200, // Default is 240
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+
+    	var bg = jQuery(".element");
+	jQuery(window).resize("resizeBackground");
+	function resizeBackground() {
+			bg.height(jQuery(window).height()-150 );
+		}
+	resizeBackground();
+
+	$('video').on('ended', function () {
+  		this.load();
+  		this.play();
+	});
+
 });
 
-//Referenciák képszűrés
-$('html').on('click', '.image-filter', function () {
-    var imgShow = $(this).data('show');
-    $('.image-filter').removeClass('active');
-    $(this).addClass('active');
-
-    if (imgShow === 'all') {
-        $('.gallery-container .item').show();
-    } else {
-        $('.gallery-container .item').hide();
-        $('.gallery-container').find('.' + imgShow).show();
-    }
-});

@@ -1,2 +1,63 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row" id="video-wrap">
+	<div class="col s12 m12 l12 element" id="video">
+		 <video  autoplay loop>
+    	<source src="img/Prominent - V2 - full4.mp4" type="video/mp4" >
+  		</video>
+	</div>
+</div>
+
+<div class="row" id="boards">
+	<div class="col s12 m6 l6">
+		<div>
+		<img class="responsive-img" src="img/ipad.png" alt="">
+		</div>
+	</div>
+	<div class="col s12 m6 l6 black-text center">
+	<div class="container">
+	<h3>WHY US?</h3>
+	<p>We are a Team of European professionals with more than 10 years expertise in development and more than 20 years experience in video production.</p>
+<p>
+We use the latest technologies not just for web development but also 
+for commercials and production services.</p>
+<p>
+We provide services on reasonable prices and on top quality!</p>
+
+<p>
+We bring the best of Europe to the best of the Middle East, merging the 
+essence of both worlds.</p>
+<%= link_to whyus_path do %>
+<img src="img/ra-icon.png" alt="">
+<% end %>
+</div>
+</div>
+	<div class="col s12 m6 l6 black-text center">
+	<div class="container">
+	<h3>WHAT WE DO?</h3>
+	<p>Prominent Media Group provides solutions from ideas to web or
+software development, from concept creation to commercial production.
+We believe in perfection and profession to our costumers.</p>
+
+<p>
+We come together to solve problems to bring out the best online solutions.
+We share our stories to bring life to the identity of given companies.
+</p>
+<img src="img/ra-icon.png" alt="">
+</div>
+</div>
+	<div class="col s12 m6 l6">
+		<div>
+		<img class="responsive-img" src="img/mac2.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="row" id="home-works-head">
+	<div class="col s12 m12 l12 center white-text">
+		<h5>WORKS</h5>
+	</div>
+</div>
+<%= render 'pages/gallery' %>
+<script>
+	$(".gallery .mix").css("display", "inline-block");
+</script>
+
