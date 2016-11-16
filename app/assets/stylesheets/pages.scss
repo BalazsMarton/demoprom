@@ -24,22 +24,32 @@ div.navbar-fixed{
 nav{
 	background-color:$primary-black;
 }
+/*nav/dropdown*/
+.dropdown-content li:hover{
+	background-color:rgba(0,0,0,0.7);
+}
+.dropdown-content li.active, .dropdown-content li.selected {
+    background-color:rgba(0,0,0,0.7);
+}
 .nav-wrapper {
     	ul li a{
     		font-size: 1.2em;
     		transition-duration: 1s;
     		&:hover{
-    			color: rgb(150,142,122);
+    			color: #fdebae;
     		}
     	}
     	ul li.active a{
-			color: rgb(150,142,122);
+			color: #fdebae;
     	}
 }
 #wrap-container{
 	#logo-container{
 		top:25px;
-		line-height:0;	
+		line-height:0;
+		img{
+			max-height: 100px;
+		}
 	}
 	
 }
@@ -89,6 +99,7 @@ footer.page-footer{
 		}
 	}
 	img{
+		max-height:48px;
 		display:inline-block;
 	}
 }

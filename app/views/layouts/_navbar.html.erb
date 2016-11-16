@@ -9,14 +9,14 @@
       </ul>
       
         <%= link_to root_path, class: 'center brand-logo', id: 'logo-container' do %>
-          <img class="responsive-img" src="/img/prominentlogo.png" alt="">
+          <img class="responsive-img" src="/img/prominent_logo.svg" alt="">
         <% end %>
 
       </ul>
           <ul class="hide-on-med-and-down right">
             <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
             <li><a href="">TEAM</a></li>
-            <li><a href="">CONTACT US</a></li>
+                    <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT US', contact_path %></li>
           </ul>
        
       
@@ -41,7 +41,7 @@
         <li class="<%= 'active' if current_page?(marketing_path) %>"><%= link_to 'MARKETING', marketing_path %></li>
         <li class="<%= 'active' if current_page?(production_path) %>"><%= link_to 'PRODUCTION', production_path %></li>
         <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
-        <li><a href="">TEAM</a></li>
+        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT', contact_path %></li>
         <li><a href="">CONTACT US</a></li>
 </ul>
 
