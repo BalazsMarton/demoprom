@@ -1,5 +1,5 @@
-<div class="navbar">
-  <nav class="">
+<div class="navbar-fixed">
+  <nav class="" id="global-nav">
     <div class="nav-wrapper container" id="wrap-container">
       <ul class="hide-on-med-and-down left">
         <li class="<%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
@@ -44,3 +44,21 @@
         <li><a href="">TEAM</a></li>
         <li><a href="">CONTACT US</a></li>
 </ul>
+
+<script>
+  $(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 150) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 150) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+</script>

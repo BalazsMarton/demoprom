@@ -28,17 +28,12 @@ document.addEventListener("turbolinks:load", function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
 
-    	var bg = jQuery(".element");
-	jQuery(window).resize("resizeBackground");
+    var bg = jQuery(".element");
+	$(window).resize("resizeBackground");
 	function resizeBackground() {
 			bg.height(jQuery(window).height()-150 );
 		}
 	resizeBackground();
-
-	$('video').on('ended', function () {
-  		this.load();
-  		this.play();
-	});
 
 });
 

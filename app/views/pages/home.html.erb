@@ -1,9 +1,25 @@
-<div class="row" id="video-wrap">
+<div class="parallax-container element hide-on-large-only">
+	<div class="parallax">
+		<img src="img/VIDEO.jpg" alt="">
+	</div>
+</div>
+<div class="row hide-on-med-and-down" id="video-wrap">
+
 	<div class="col s12 m12 l12 element" id="video">
+		 
 		 <video  autoplay loop>
     	<source src="img/Prominent - V2 - full4.mp4" type="video/mp4" >
   		</video>
+
 	</div>
+	<div class="col s12 m12 l12 hide-on-med-and-up element" id="video"> 
+	</div>
+	<script>
+		$('video').on('ended', function () {
+  		this.load();
+  		this.play();
+	});
+	</script>
 </div>
 
 <div class="row" id="boards">
