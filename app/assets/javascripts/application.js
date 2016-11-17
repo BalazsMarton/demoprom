@@ -28,6 +28,13 @@ document.addEventListener("turbolinks:load", function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
 
+      var bg = jQuery(".element");
+  $(window).resize("resizeBackground");
+  function resizeBackground() {
+      bg.height(jQuery(window).height()-100)
+    }
+  resizeBackground();
+  
 
 	  $('.dropdown-button').dropdown({
       inDuration: 300,

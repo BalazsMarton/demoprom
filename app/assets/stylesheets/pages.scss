@@ -13,7 +13,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     line-height: 100px;
 }
 }
-
+.button-collapse{
+	cursor: pointer;
+}
 
 div.navbar-fixed{
 	background-color:$primary-black;
@@ -548,3 +550,26 @@ video {
 }
 
 /*CONTACT*/
+
+#contactus{
+	height: inherit;
+	min-height:600px;
+	.section{
+		width: 100%;
+	}
+}
+.material-icons{
+	color:white;
+}
+.input-field{
+	label{
+		text-align:center;
+	}
+}
+input, select, textarea{
+    color: #fff;
+}
+
+textarea:focus, input:focus {
+    color: #fff;
+}
