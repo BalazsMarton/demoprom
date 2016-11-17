@@ -28,12 +28,17 @@ document.addEventListener("turbolinks:load", function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
 
-    var bg = jQuery(".element");
-	$(window).resize("resizeBackground");
-	function resizeBackground() {
-			bg.height(jQuery(window).height()-150 );
-		}
-	resizeBackground();
+
+	  $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      gutter: 0, // Spacing from edge
+      hover: true, // Activate on hover
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'right' // Displays dropdown with edge aligned to the left of button
+    }
+  );
 
 });
 

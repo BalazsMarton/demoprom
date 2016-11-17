@@ -5,23 +5,30 @@
         <li class="<%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
         <li class="<%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHY US?', whyus_path %></li>
         <li class="">
-          <a class="dropdown-button" href="#!" data-activates="dropdown1">SERVICES<i class="material-icons right">arrow_drop_down</i></a></li>
+          <a class="dropdown-button" data-activates="dropdown1">SERVICES<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
       
-        <%= link_to root_path, class: 'center brand-logo', id: 'logo-container' do %>
+      <%= link_to root_path, class: 'center brand-logo', id: 'logo-container' do %>
           <img class="responsive-img" src="/img/prominent_logo.svg" alt="">
-        <% end %>
+      <% end %>
 
+      <ul class="hide-on-med-and-down right">
+        <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
+        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT US', contact_path %></li>
+        <li class="navicon-wrap">
+          <a href="">
+            <img src="img/facebooknavicon.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/instanavicon.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/youtubenavicon.svg" alt="">
+          </a>
+        </li>
       </ul>
-          <ul class="hide-on-med-and-down right">
-            <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
-            <li><a href="">TEAM</a></li>
-                    <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT US', contact_path %></li>
-          </ul>
        
-      
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 </div>
@@ -34,15 +41,14 @@
 </ul>
 
 <ul id="nav-mobile" class="side-nav">
-        <li class="<%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
-        <li class="<%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHYUS', whyus_path %></li>
-        <li class="<%= 'active' if current_page?(design_path) %>"><%= link_to 'DESIGN', design_path %></li>
-        <li class="<%= 'active' if current_page?(development_path) %>"><%= link_to 'DEVELOPMENT', development_path %></li>
-        <li class="<%= 'active' if current_page?(marketing_path) %>"><%= link_to 'MARKETING', marketing_path %></li>
-        <li class="<%= 'active' if current_page?(production_path) %>"><%= link_to 'PRODUCTION', production_path %></li>
-        <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
-        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT', contact_path %></li>
-        <li><a href="">CONTACT US</a></li>
+  <li class="<%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
+  <li class="<%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHYUS', whyus_path %></li>
+  <li class="<%= 'active' if current_page?(design_path) %>"><%= link_to 'DESIGN', design_path %></li>
+  <li class="<%= 'active' if current_page?(development_path) %>"><%= link_to 'DEVELOPMENT', development_path %></li>
+  <li class="<%= 'active' if current_page?(marketing_path) %>"><%= link_to 'MARKETING', marketing_path %></li>
+  <li class="<%= 'active' if current_page?(production_path) %>"><%= link_to 'PRODUCTION', production_path %></li>
+  <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
+  <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT', contact_path %></li>
 </ul>
 
 <script>

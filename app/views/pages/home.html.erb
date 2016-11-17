@@ -15,10 +15,19 @@
 	<div class="col s12 m12 l12 hide-on-med-and-up element" id="video"> 
 	</div>
 	<script>
+	var bg = jQuery(".element");
+	$(window).resize("resizeBackground");
+	function resizeBackground() {
+			bg.height(jQuery(window).height()-100)
+		}
+	resizeBackground();
+	
 		$('video').on('ended', function () {
   		this.load();
   		this.play();
 	});
+
+
 	</script>
 </div>
 
