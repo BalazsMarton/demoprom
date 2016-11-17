@@ -42,17 +42,11 @@ nav{
 	}
 }
 /*nav/dropdown*/
-.dropdown-content{
-	background-color:$primary-black;
-	li:hover, li.active, li.selected{
-	background-color:transparent;
-	}
-}
 
 .nav-wrapper {
     	ul li a{
     		color:white;
-    		font-size: 1.2em;
+    		font-size: 18px;
     		transition-duration: 1s;
     		&:hover{
     			color: #fdebae;
@@ -62,6 +56,15 @@ nav{
 			color: #fdebae;
     	}
 }
+.dropdown-content{
+	background-color:$primary-black;
+	li:hover, li.active, li.selected{
+	background-color:transparent;
+	}
+}
+.dropdown-content li a{
+		font-size:16px;
+	}
 #wrap-container{
 	#logo-container{
 		height:100px;
@@ -197,16 +200,15 @@ footer.page-footer{
 
 @mixin servicesbase(
 	$background-image,
-	$background-size: cover,
 	$background-repeat: no-repeat,
-	$background-position: center center,
+	$background-position: top center,
 	$min-height:500px,
 	$margin-bottom: 0,
 	$padding-bottom:4rem,
 	$padding-top:2rem){
 	
 	background-image: $background-image;
-	background-size: $background-size;
+
 	background-repeat: $background-repeat;
 	background-position: $background-position;
 	min-height:$min-height;
@@ -249,13 +251,14 @@ footer.page-footer{
 		}
 		li .collapsible-header{
 			line-height:4rem;
-			font-size: 2em;
+			font-size: 20px;
 			background-color: transparent;
 			transition-duration: 1s;
 			border:none;
 			color: #898b99;
 		}
 		li .collapsible-body{
+			font-size: 16px;
 			border:none;
 		}
 	}
@@ -283,13 +286,14 @@ footer.page-footer{
 		}
 		li .collapsible-header{
 			line-height:4rem;
-			font-size: 2em;
+			font-size: 20px;
 			background-color: transparent;
 			transition-duration: 1s;
 			border:none;
 			color: rgba(255,255,255,0.6);
 		}
 		li .collapsible-body{
+			font-size: 16px;
 			border:none;
 			color: white;
 		}
@@ -321,13 +325,14 @@ footer.page-footer{
 		}
 		li .collapsible-header{
 			line-height:4rem;
-			font-size: 2em;
+			font-size: 20px;
 			background-color: transparent;
 			transition-duration: 1s;
 			border:none;
 			color: rgba(255,255,255,0.6);
 		}
 		li .collapsible-body{
+			font-size: 16px;
 			border:none;
 			color:white;
 		}
@@ -362,13 +367,14 @@ footer.page-footer{
 		}
 		li .collapsible-header{
 			line-height:4rem;
-			font-size: 2em;
+			font-size: 20px;
 			background-color: transparent;
 			transition-duration: 1s;
 			border:none;
 			color: rgba(0,0,0,0.6);
 		}
 		li .collapsible-body{
+			font-size: 16px;
 			border:none;
 		}
 	}
