@@ -438,11 +438,10 @@ footer.page-footer{
 		padding: 1rem;
 		color:white;
 		display: inline-block;
-		opacity: 0.8;
 		transition-duration: 0.8s;
 	}
 	ul li.active{
-		opacity:1;
+		color:#fdebae;
 	}
 
 }
@@ -479,12 +478,12 @@ ul.gallery{
   	justify-content: center;
   	align-items: center;
   	border: 15px solid rgba(0,0,0,0);
-    box-shadow: 0 0 0 3px transparent, inset 0 0 0 5px rgba(255,255,255,0.6);
+    box-shadow: 0 0 0 3px transparent, inset 0 0 0 5px rgba(255,255,255,0.8);
   	p{	
-		font-size: 16px;
+		font-size: 20px;
 
   		&:first-child{
-  			font-size:20px;
+  			font-size:36px;
   			line-height: 1;
   			margin-bottom:0;
   		}
