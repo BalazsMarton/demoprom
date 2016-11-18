@@ -108,9 +108,24 @@ align-items: center;
     	width: 70%;
 	}
 }
+@media only screen and (min-width: 1200px){
+	#wrap-container {
+    	width: 60%;
+	}
+}
 @media only screen and (min-width: 1400px){
 	#wrap-container {
     	width: 50%;
+	}
+}
+@media only screen and (min-width: 1600px){
+	#wrap-container {
+    	width: 45%;
+	}
+}
+@media only screen and (min-width: 1800px){
+	#wrap-container {
+    	width: 40%;
 	}
 }
 
