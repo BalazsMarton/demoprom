@@ -498,7 +498,10 @@ ul.gallery{
   	border: 15px solid rgba(0,0,0,0);
     box-shadow: 0 0 0 3px transparent, inset 0 0 0 5px rgba(255,255,255,0.6);
   	p{	
+  		font-size: 18px;
+  		text-transform: uppercase;
   		&:first-child{
+  			font-size: 30px;
   			line-height: 1;
   			margin-bottom:0;
   		}
