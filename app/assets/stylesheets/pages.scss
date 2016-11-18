@@ -59,7 +59,7 @@ nav{
 		height:100px;
 		padding:0 0.4rem;
 		img{
-			height: 25px;
+			height: 20px;
 			width: auto;
 			&:hover{
 				opacity:0.8;
@@ -70,22 +70,29 @@ nav{
 /*nav/dropdown*/
 
 .nav-wrapper {
-    	ul li a{
+    ul li{
+    	padding:0 0.5em;
+    	a{
     		color:white;
     		font-size: 14px;
     		transition-duration: 1s;
     		&:hover{
     			color: #fdebae;
     		}
+    		i{
+    			margin-right: 0;
+    			font-size: 18px;
+    		}
     	}
-    	ul li.active a{
-			color: #fdebae;
-    	}
+    }
+    ul li.active a{
+		color: #fdebae;
+    }
 }
 .dropdown-content{
 	background-color:$primary-black;
 	li:hover, li.active, li.selected{
-	background-color:transparent;
+	background-color:#161e2b;
 	}
 }
 .dropdown-content li a{
@@ -125,7 +132,10 @@ align-items: center;
 }
 @media only screen and (min-width: 1800px){
 	#wrap-container {
-    	width: 40%;
+    	width: 60%;
+	}
+	.nav-wrapper ul li{
+		padding: 0 2em;
 	}
 }
 
