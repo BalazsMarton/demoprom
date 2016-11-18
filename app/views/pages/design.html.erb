@@ -92,23 +92,15 @@ cards with us. Furthermore we make brochures and any advertising content that yo
 				</div>
 			</div>
 		</div>
-		<!--
-		<div class="col s2 m2 l2 collapse-buttons">
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-			<i class="material-icons">radio_button_unchecked</i>
-		</div>
-		-->
 	</div>
 </div>
 </div>
 <%= render 'pages/related' %>
 <script>
-jQuery('.gallery .webdesign:lt(4)').show();
+if (window.innerWidth <= 993){
+			jQuery(".webdesign:lt(3)").show();
+		}
+else{
+	jQuery(".webdesign:lt(4)").show();
+}
 </script>

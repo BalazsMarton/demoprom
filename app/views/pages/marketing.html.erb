@@ -86,5 +86,10 @@
 </div>
 <%= render 'pages/related' %>
 <script>
-	  jQuery('.gallery li:lt(4)').show();
+if (window.innerWidth <= 993){
+			jQuery(".print:lt(3)").show();
+		}
+else{
+	jQuery(".print:lt(4)").show();
+}
 </script>

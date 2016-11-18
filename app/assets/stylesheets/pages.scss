@@ -1,9 +1,33 @@
+/* mixin for bullet proof font declaration syntax */
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+@font-face {
+font-family: '#{$font-family}';
+src: url(font-path('#{$font-filename}.eot'));
+src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+url(font-path('#{$font-filename}.woff')) format('woff'),
+url(font-path('#{$font-filename}.ttf')) format('truetype'),
+url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+font-weight: $font-weight;
+font-style: $font-style;
+font-stretch: $font-stretch;
+}
+}
+@include declare-font-face('GothamNarrow-Book', 'GothamNarrow-Book', 200);
+@include declare-font-face('GothamNarrow-Medium', 'GothamNarrow-Medium', 200);
+
 $primary-black:rgb(0,0,10);
 $primary-red:red;
 
 body{
 	background-color: $primary-black;
 	overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+
+}
+p{
+
 }
 /*NAVBAR*/
 
@@ -436,6 +460,9 @@ ul.gallery{
 
 .gallery .mix{
 	display: none;
+	img{
+		width:100%;
+	}
 }
 
 .work-label{
@@ -454,11 +481,12 @@ ul.gallery{
   	border: 15px solid rgba(0,0,0,0);
     box-shadow: 0 0 0 3px transparent, inset 0 0 0 5px rgba(255,255,255,0.6);
   	p{	
-		font-size: 1.2rem;
+		font-size: 16px;
 
   		&:first-child{
-  			font-size:1.6rem;
+  			font-size:20px;
   			line-height: 1;
+  			margin-bottom:0;
   		}
   	}
   	img{
@@ -500,8 +528,16 @@ ul.gallery{
 }
 #whyus-container{
 	.row .col{
+		h4{
+			margin-top: 0;
+			margin-bottom:34px;
+		}
 		p{
-			font-size: 1.4em;
+			margin-bottom: 34px;
+			font-size: 16px;
+		}
+		button{
+			margin: 17px 0;
 		}
 	}
 }
@@ -556,8 +592,15 @@ video {
 	min-height:600px;
 	.section{
 		width: 100%;
+		
 	}
 }
+#parallax-form h5:after{
+			content:"";
+			display: block;
+			height:2rem;
+
+		}
 .material-icons{
 	color:white;
 }
