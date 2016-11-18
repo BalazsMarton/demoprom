@@ -41,7 +41,7 @@ document.addEventListener("turbolinks:load", function() {
       outDuration: 225,
       constrain_width: false, // Does not change width of dropdown to that of the activator
       gutter: 0, // Spacing from edge
-      hover: true, // Activate on hover
+      hover: false, // Activate on hover
       belowOrigin: true, // Displays dropdown below the button
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     }
