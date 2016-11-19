@@ -165,6 +165,7 @@ nav i.material-icons{
 
 /*FOOTER*/
 footer.page-footer{
+	margin-top:0;
 	background-color:$primary-black;
 	padding:4em 0;
 	p{
@@ -574,9 +575,9 @@ ul.gallery{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 	background-color: #0e121d;
-	-webkit-box-shadow: 0px -100px 80px 30px rgba(14,18,30,0.9), inset 0px -70px 70px -40px rgba(0,0,0,0.8);
-	-moz-box-shadow: 0px -100px 80px 30px rgba(14,18,30,0.9), inset 0px -70px 70px -40px rgba(0,0,0,0.8);
-	box-shadow: 0px -100px 80px 30px rgba(14,18,30,0.9), inset 0px -70px 70px -40px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0px -50px 100px 100px rgba(14,18,30,0.90), inset 0px -70px 70px -40px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px -50px 100px 100px rgba(14,18,30,0.90), inset 0px -70px 70px -40px rgba(0,0,0,0.8);
+	box-shadow: 0px -50px 100px 100px rgba(14,18,30,0.90),inset 0px -70px 70px -40px rgba(0,0,0,0.8);
 	/*
 	-webkit-box-shadow: inset 0px -77px 69px -41px rgba(0,0,0,0.9);
 	-moz-box-shadow: inset 0px -77px 69px -41px rgba(0,0,0,0.9);

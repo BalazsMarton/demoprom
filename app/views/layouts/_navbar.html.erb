@@ -2,7 +2,7 @@
   <nav class="" id="global-nav">
     <div class="nav-wrapper container" id="wrap-container">
       <ul class="hide-on-med-and-down left">
-        <li class="menu <%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
+        <li class="menu <%= 'active' if current_page?(home_path) || current_page?(root_path)  %>"><%= link_to 'HOME', home_path %></li>
         <li class="menu <%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHY US?', whyus_path %></li>
         <li class="menu">
           <a class="dropdown-button" data-activates="dropdown1">SERVICES<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -50,21 +50,3 @@
   <li class="<%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
   <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT', contact_path %></li>
 </ul>
-
-<script>
-  $(document).ready(function(){
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 150) {
-      $('#global-nav').addClass('scrolled-nav');
-    } else if (scrollTop < 150) {
-      $('#global-nav').removeClass('scrolled-nav');
-    } 
-    
-  }); 
-  
-});
-</script>

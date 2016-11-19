@@ -23,10 +23,6 @@ document.addEventListener("turbolinks:load", function() {
 	// Parallax effect
 	$('.parallax').parallax();
 	// Initialize collapse button
-	$('.button-collapse').sideNav({
-      menuWidth: 200, // Default is 240
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    });
 
       var bg = jQuery(".element");
   $(window).resize("resizeBackground");
@@ -41,11 +37,25 @@ document.addEventListener("turbolinks:load", function() {
       outDuration: 225,
       constrain_width: false, // Does not change width of dropdown to that of the activator
       gutter: 0, // Spacing from edge
-      hover: false, // Activate on hover
+      hover: true, // Activate on hover
       belowOrigin: true, // Displays dropdown below the button
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     }
   );
+      $('.button-collapse').sideNav({
+      menuWidth: 200, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: false // Choose whether you can drag to open on touch screens
+    }
+  );
+  $('select').material_select();
+  $('form').validate({
+    errorClass: 'invalid',
+    errorPlacement: function (error, element) {
+    element.next("label").attr("data-error", error.contents().text());
+    }
+  });
 
 });
 
