@@ -49,13 +49,6 @@ document.addEventListener("turbolinks:load", function() {
       draggable: false // Choose whether you can drag to open on touch screens
     }
   );
-  $('select').material_select();
-  $('form').validate({
-    errorClass: 'invalid',
-    errorPlacement: function (error, element) {
-    element.next("label").attr("data-error", error.contents().text());
-    }
-  });
 
 });
 
