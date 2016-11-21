@@ -566,6 +566,11 @@ ul.gallery{
 		height:500px;
 	}
 }
+@media only screen and (min-width: 601px) and (max-width: 1366px){
+	#whyus-parallax-wrap {
+		height:550px;
+	}
+}
 #whyus-wrap{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
