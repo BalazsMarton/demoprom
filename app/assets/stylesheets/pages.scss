@@ -157,11 +157,12 @@ footer.page-footer{
 }
 
 .footercontent-head{
+	height: 75px;
 	display:flex;
 	justify-content: center;
   	align-items: center;
 	border-bottom: 1px solid white;
-	h4{
+	h5{
 		display:inline-block;
 				&::after{
 		content:"";
@@ -187,6 +188,7 @@ footer.page-footer{
 }
 
 .footercontent-footer{
+	height:75px;
 	border-top: 1px solid white;
 	display:flex;
 	justify-content: center;
