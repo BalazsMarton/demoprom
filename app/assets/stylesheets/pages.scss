@@ -477,6 +477,12 @@ footer.page-footer{
 	}
 
 }
+@media screen and (max-width: 600px) {
+    #works-nav ul li{
+		padding: 10px;
+	}
+}
+
 	/*gallery container*/
 ul.gallery{
 	margin:0;
