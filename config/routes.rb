@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'contact' => 'pages#contact'
 
+  get 'proba' => 'pages#proba'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

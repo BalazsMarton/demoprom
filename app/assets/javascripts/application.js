@@ -35,7 +35,7 @@ document.addEventListener("turbolinks:load", function() {
 	  $('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
+      constrain_width: true, // Does not change width of dropdown to that of the activator
       gutter: 0, // Spacing from edge
       hover: true, // Activate on hover
       belowOrigin: true, // Displays dropdown below the button
@@ -49,6 +49,5 @@ document.addEventListener("turbolinks:load", function() {
       draggable: false // Choose whether you can drag to open on touch screens
     }
   );
-
 });
 

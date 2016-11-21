@@ -1,21 +1,26 @@
-<div class="navbar-fixed">
-  <nav class="" id="global-nav">
-    <div class="nav-wrapper container" id="wrap-container">
-      <ul class="hide-on-med-and-down left">
-        <li class="menu <%= 'active' if current_page?(home_path) || current_page?(root_path)  %>"><%= link_to 'HOME', home_path %></li>
-        <li class="menu <%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHY US?', whyus_path %></li>
-        <li class="menu">
-          <a class="dropdown-button" data-activates="dropdown1">SERVICES<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
-      
-      <%= link_to root_path, class: 'center brand-logo', id: 'logo-container' do %>
-          <img class="responsive-img" src="/img/prominent_logo.svg" alt="">
-      <% end %>
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper container">
+      <ul class="hide-on-med-and-down" id="tabok">
 
-      <ul class="hide-on-med-and-down right">
-        <li class="menu <%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
-        <li class="menu <%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT US', contact_path %></li>
-        <li class="menu navicon-wrap">
+        <li class="tabs-item <%= 'active' if current_page?(home_path) || current_page?(root_path)  %>"><%= link_to 'HOME', home_path %></li>
+        
+        <li class="tabs-item <%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHY US?', whyus_path %></li>
+        
+        <li class="tabs-item">
+          <a class="dropdown-button" data-activates="dropdown1">SERVICES<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li class="tabs-item">
+        <%= link_to root_path, class: 'tabs-link' do %>
+          <img class="responsive-img" id="logo" src="/img/prominent_logo.svg" alt="">
+        <% end %>
+        </li>
+        
+        <li class="tabs-item <%= 'active' if current_page?(works_path) %>"><%= link_to 'WORKS', works_path %></li>
+        
+        <li class="tabs-item <%= 'active' if current_page?(contact_path) %>"><%= link_to 'CONTACT', contact_path %></li>
+        
+        <li class="tabs-item navicon-wrap">
           <a href="">
             <img src="img/facebooknavicon.svg" alt="">
           </a>
@@ -26,13 +31,19 @@
             <img src="img/youtubenavicon.svg" alt="">
           </a>
         </li>
+
       </ul>
-       
+
       <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <%= link_to root_path, class: 'tabs-link brand-logo hide-on-large-only' do %>
+          <img class="responsive-img" id="logo" src="/img/prominent_logo.svg" alt="">
+      <% end %>
+
     </div>
   </nav>
-</div>
-<!-- Dropdown Structure -->
+  </div>
+  <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
   <li class="<%= 'active' if current_page?(design_path) %>"><%= link_to 'Design', design_path %></li>
   <li class="<%= 'active' if current_page?(development_path) %>"><%= link_to 'Development', development_path %></li>
@@ -41,7 +52,7 @@
 </ul>
 
 <ul id="nav-mobile" class="side-nav">
-  <li class="<%= 'active' if current_page?(home_path) %>"><%= link_to 'HOME', home_path %></li>
+  <li class="<%= 'active' if current_page?(home_path) || current_page?(root_path) %>"><%= link_to 'HOME', home_path %></li>
   <li class="<%= 'active' if current_page?(whyus_path) %>"><%= link_to 'WHYUS', whyus_path %></li>
   <li class="<%= 'active' if current_page?(design_path) %>"><%= link_to 'DESIGN', design_path %></li>
   <li class="<%= 'active' if current_page?(development_path) %>"><%= link_to 'DEVELOPMENT', development_path %></li>
