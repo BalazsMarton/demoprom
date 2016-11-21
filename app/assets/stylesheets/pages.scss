@@ -157,7 +157,7 @@ footer.page-footer{
 }
 
 .footercontent-head{
-		display:flex;
+	display:flex;
 	justify-content: center;
   	align-items: center;
 	border-bottom: 1px solid white;
@@ -170,7 +170,7 @@ footer.page-footer{
 		}
 	}
 	img{
-		max-height:48px;
+		max-height:38px;
 		display:inline-block;
 	}
 }
@@ -192,23 +192,28 @@ footer.page-footer{
 	justify-content: center;
   	align-items: center;
 	h4{
-		margin: 1.46rem 0 1.46rem 0;
+
 		&::after{
 		content:"";
   		display:inline-block;
-		width:2rem;
+					width:1rem;
 		}
 	}
 }
 
 	.icons{
+		display:flex;
+		justify-content: center;
+  		align-items: center;
+
 		&::before{
 			content:"";
   			display:inline-block;
-			width:2rem;
+			width:1rem;
 		}
-		height:48px;
 		li{
+			padding: 0 0.4rem;
+			height: 38px;
 			display:inline-block;
 			a{	
 				display:inline-block;
@@ -217,7 +222,7 @@ footer.page-footer{
 				}
 				.contacticon{
 	   				position: static;
-					height:48px;
+					height:38px;
 				}
 			}
 				
