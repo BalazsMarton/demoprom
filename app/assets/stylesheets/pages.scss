@@ -558,6 +558,14 @@ ul.gallery{
 	margin-bottom: 0;
 }
 /*WHYUS*/
+#whyus-parallax-wrap{
+	height:650px;
+}
+@media only screen and (max-width: 600px){
+	#whyus-parallax-wrap {
+		height:500px;
+	}
+}
 #whyus-wrap{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
