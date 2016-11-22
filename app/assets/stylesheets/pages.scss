@@ -651,6 +651,11 @@ ul.gallery{
 		width:100%;
 	}
 }
+@media only screen and (max-width: 600px){
+	#opening-logo{
+		width:80%;
+	}
+}
 #video{
 	padding:0;
 	overflow: hidden;
