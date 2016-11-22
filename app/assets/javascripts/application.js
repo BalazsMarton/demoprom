@@ -51,9 +51,11 @@ document.addEventListener("turbolinks:load", function() {
   );
 
   // MATERIALIZE JQUERY VALIDATE
+  //teszt method telefonhoz
   $.validator.addMethod('customphone', function (value, element) {
         return this.optional(element) || /^(\+91-|\+91|0)?\d{10}$/.test(value);
     }, "Please enter a valid phone number");
+/////////
 
   $.validator.addMethod("lettersonly", function(value, element) {
 return this.optional(element) || /^[a-z\s]+$/i.test(value);
@@ -77,13 +79,13 @@ $("#form").validate({
     rules: {
         firstname: {
             minlength:2,
-            maxlength: 10,
+            maxlength: 20,
             required: true,
             lettersonly: true
         },
         lastname: {
           required: true,
-          maxlength: 10,
+          maxlength: 20,
             minlength:2,
             lettersonly: true
         },

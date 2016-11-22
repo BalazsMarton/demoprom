@@ -29,10 +29,13 @@ h1,h2,h3,h4,h5{
 p{
 
 }
-.quote-button{
+.send-button{
 	border-radius: 0;
 	background-color: transparent;
 	border: 1px solid white;
+}
+.quote-button{
+	border-radius: 0;
 }
 /*NAVBAR*/
 
@@ -122,7 +125,8 @@ div.navbar-fixed{
   .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected{
   background-color:#161e2b;
   }
-    ul li.active a{
+
+  .nav-wrapper ul li.active a{
     color: #fdebae;
     }
 #nav-mobile{
@@ -319,6 +323,10 @@ footer.page-footer{
 		li .collapsible-body{
 			font-size: 16px;
 			border:none;
+			margin-bottom:2rem;
+			p{
+				padding:1rem 1rem 1.2rem 1rem;
+			}
 		}
 	}
 }
@@ -355,6 +363,10 @@ footer.page-footer{
 			font-size: 16px;
 			border:none;
 			color: white;
+			margin-bottom:2rem;
+			p{
+				padding:1rem 1rem 1.2rem 1rem;
+			}
 		}
 	}
 }
@@ -393,7 +405,11 @@ footer.page-footer{
 		li .collapsible-body{
 			font-size: 16px;
 			border:none;
-			color:white;
+			color: white;
+			margin-bottom:2rem;
+			p{
+				padding:1rem 1rem 1.2rem 1rem;
+			}
 		}
 	}
 }
@@ -435,6 +451,10 @@ footer.page-footer{
 		li .collapsible-body{
 			font-size: 16px;
 			border:none;
+			margin-bottom:2rem;
+			p{
+				padding:1rem 1rem 1.2rem 1rem;
+			}
 		}
 	}
 }
@@ -480,6 +500,7 @@ footer.page-footer{
 	ul li.active{
 		color:#fdebae;
 	}
+	
 
 }
 @media screen and (max-width: 600px) {
