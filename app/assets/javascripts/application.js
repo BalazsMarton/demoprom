@@ -51,10 +51,14 @@ document.addEventListener("turbolinks:load", function() {
   );
 
   // MATERIALIZE JQUERY VALIDATE
-  jQuery.validator.addMethod("lettersonly", function(value, element) {
+  $.validator.addMethod('customphone', function (value, element) {
+        return this.optional(element) || /^(\+91-|\+91|0)?\d{10}$/.test(value);
+    }, "Please enter a valid phone number");
+
+  $.validator.addMethod("lettersonly", function(value, element) {
 return this.optional(element) || /^[a-z\s]+$/i.test(value);
 }, "Only alphabetical characters");
-  
+
 $.validator.setDefaults({
     errorClass: 'invalid',
     validClass: "valid",
@@ -83,6 +87,7 @@ $("#form").validate({
             minlength:2,
             lettersonly: true
         },
+        tel: "customphone",
         email: {
         required: true,
         // Specify that email should be validated
