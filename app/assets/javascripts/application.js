@@ -69,11 +69,15 @@ $("#form").validate({
     rules: {
         firstname: {
             minlength:2,
+            maxlength: 10,
             required: true,
+            lettersonly: true
         },
         lastname: {
           required: true,
+          maxlength: 10,
             minlength:2,
+            lettersonly: true
         },
         email: {
         required: true,
@@ -86,11 +90,15 @@ $("#form").validate({
 
         firstname: {
         required: "We need your name to contact you",
-        minlength: "Your first name must be at least 2 characters long"
+        minlength: "Your first name must be at least 2 characters long",
+        maxlength: "Your first name must be at max 20 characters long",
+        lettersonly: "Use only letters"
         },
         lastname: {
         required: "We need your name to contact you",
-        minlength: "Your last name must be at least 2 characters long"
+        minlength: "Your last name must be at least 2 characters long",
+        maxlength: "Your last name must be at max 20 characters long",
+        lettersonly: "Use only letters"
         },
         email: {
         required: "We need your email address to contact you",
