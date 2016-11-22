@@ -51,7 +51,7 @@ document.addEventListener("turbolinks:load", function() {
   );
 
   // MATERIALIZE JQUERY VALIDATE
-  //teszt method telefonhoz
+  //teszt method telefonhoz - írd át!!!
   $.validator.addMethod('customphone', function (value, element) {
         return this.optional(element) || /^(\+91-|\+91|0)?\d{10}$/.test(value);
     }, "Please enter a valid phone number");
