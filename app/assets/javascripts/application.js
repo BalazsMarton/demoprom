@@ -51,6 +51,10 @@ document.addEventListener("turbolinks:load", function() {
   );
 
   // MATERIALIZE JQUERY VALIDATE
+  jQuery.validator.addMethod("lettersonly", function(value, element) {
+return this.optional(element) || /^[a-z\s]+$/i.test(value);
+}, "Only alphabetical characters");
+  
 $.validator.setDefaults({
     errorClass: 'invalid',
     validClass: "valid",
