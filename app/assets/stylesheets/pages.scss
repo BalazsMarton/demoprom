@@ -646,7 +646,11 @@ ul.gallery{
 	}
 }
 /*HOME*/
-
+#mobile-parallax{
+	.section{
+		width:100%;
+	}
+}
 #video{
 	padding:0;
 	overflow: hidden;
