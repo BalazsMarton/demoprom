@@ -49,5 +49,56 @@ document.addEventListener("turbolinks:load", function() {
       draggable: false // Choose whether you can drag to open on touch screens
     }
   );
+
+  // MATERIALIZE JQUERY VALIDATE
+$.validator.setDefaults({
+    errorClass: 'invalid',
+    validClass: "valid",
+    errorPlacement: function (error, element) {
+        $(element)
+            .closest("form")
+            .find("label[for='" + element.attr("id") + "']")
+            .attr('data-error', error.text());
+    },
+    submitHandler: function (form) {
+        console.log('form ok');
+    }
+});
+
+$("#form").validate({
+    rules: {
+        firstname: {
+            minlength:2,
+            required: true,
+        },
+        lastname: {
+          required: true,
+            minlength:2,
+        },
+        email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true,
+        },
+      },
+    messages: {
+
+        firstname: {
+        required: "We need your name to contact you",
+        minlength: "Your first name must be at least 2 characters long"
+        },
+        lastname: {
+        required: "We need your name to contact you",
+        minlength: "Your last name must be at least 2 characters long"
+        },
+        email: {
+        required: "We need your email address to contact you",
+        },
+
+    },
+
+});
+
 });
 
