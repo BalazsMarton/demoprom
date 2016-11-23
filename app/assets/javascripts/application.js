@@ -24,6 +24,10 @@
 document.addEventListener("turbolinks:load", function() {
 	//MATERIALIZE JS
 	//
+  //form
+  $(function(){
+    Materialize.updateTextFields();
+  });
 	// Parallax effect
 	$('.parallax').parallax();
 	// Initialize collapse button
