@@ -651,11 +651,22 @@ ul.gallery{
 		margin-top: -50px;
 		padding-top: 0;
 		width:100%;
+		.row .col{
+			width:100%;
+		}
 	}
 }
 @media only screen and (max-width: 600px){
 	#opening-logo{
 		width:80%;
+	}
+}
+@media only screen and (max-width: 800px) and (orientation: landscape){
+	#mobile-parallax .section{
+		margin-top: 0;
+	}
+	#opening-logo{
+		width:50%;
 	}
 }
 #video{
