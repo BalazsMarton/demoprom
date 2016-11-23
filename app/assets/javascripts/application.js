@@ -17,6 +17,10 @@
 //= require mixitup
 //= require_tree .
 
+//felhasznált pluginok:
+//jquery validacio https://jqueryvalidation.org/
+//galéria szűrés https://mixitup.kunkalabs.com/
+
 document.addEventListener("turbolinks:load", function() {
 	//MATERIALIZE JS
 	//
@@ -51,14 +55,14 @@ document.addEventListener("turbolinks:load", function() {
   );
 
   // MATERIALIZE JQUERY VALIDATE
-  //teszt method telefonhoz - írd át!!!
+  //teszt method arab telefonhoz - írd át de szerintem jó, kormányzati számokat nem néztem!!!
   $.validator.addMethod('customphone', function (value, element) {
-        return this.optional(element) || /^(\+91-|\+91|0)?\d{10}$/.test(value);
+        return this.optional(element) || /^(?:\+971|00971|0)(?:2|3|4|6|7|9|50|51|52|55|56)[0-9]{7}$/.test(value);
     }, "Please enter a valid phone number");
 /////////
-
+// teszt method arab nevekhez - írd át
   $.validator.addMethod("lettersonly", function(value, element) {
-return this.optional(element) || /^[a-z\s]+$/i.test(value);
+return this.optional(element) || /^[a-z-' ZÀÁÂÃÄÅàáâãäåÒÓÔÕÖŐØòóôõőöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ]+$/i.test(value);
 }, "Only alphabetical characters");
 
 $.validator.setDefaults({
@@ -89,16 +93,20 @@ $("#form").validate({
             minlength:2,
             lettersonly: true
         },
-        tel: "customphone",
+        tel: {
+          customphone: true
+        },
         email: {
         required: true,
         // Specify that email should be validated
         // by the built-in "email" rule
-        email: true,
+        email: true
         },
       },
     messages: {
-
+        tel: {
+          customphone: "Please enter a valid phone number"
+        },
         firstname: {
         required: "We need your name to contact you",
         minlength: "Your first name must be at least 2 characters long",
