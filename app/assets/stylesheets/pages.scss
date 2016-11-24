@@ -830,14 +830,19 @@ textarea:focus, input:focus {
 		margin-top:-156px;
 	}
 	.row .col p{
-		padding:2rem 0;
+		padding:1rem 0;
+	}
+	a::after{
+		content:"";
+		height:2rem;
+		display: block;
 	}
 }
 .work-foot-wrap{
-	min-height: 100px;
 	background-color: white;
 	display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 	min-height: 200px;
 }
