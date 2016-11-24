@@ -22,6 +22,9 @@
 //galéria szűrés https://mixitup.kunkalabs.com/
 
 document.addEventListener("turbolinks:load", function() {
+  $("#work-head-body").mCustomScrollbar({
+    scrollButtons:{ enable: true }
+  });
 	//MATERIALIZE JS
 	//
   //form

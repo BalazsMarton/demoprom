@@ -21,6 +21,9 @@ $primary-red:red;
 body{
 	background-color: $primary-black;
 	overflow-x: hidden;
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
 }
 
 h1,h2,h3,h4,h5{
@@ -748,10 +751,32 @@ textarea:focus, input:focus {
 }
 
 /*WORK 5 BPCLEANERS*/
+#work-head-title{
+	text-align:left;
+	padding:1rem;
+	font-size: 18px;
+	border-color: black;
+	border-style: solid;
+    border-width: 2px 2px 0px 2px;
+}
+#work-head-body{
+	height:300px;
+	overflow-y: scroll;
+	text-align:left;
+	padding:1rem 0.3rem 1rem 1rem ;
+	font-size: 14px;
+	border:2px solid black;
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
+}
 .work-head-wrap#work5{
 	background-image: url('/img/workshow5heading.jpg');
 }
-@media (max-width: 768px) {
+.box-b{
+  	padding:0.5rem 2rem 0.5rem 2rem  !important;
+}
+@media (max-width: 600px) {
   .flex-s {
     display: flex;
     flex-direction: column; /* Stack on top */
@@ -759,7 +784,33 @@ textarea:focus, input:focus {
   .box-a {
     order: 2; /* Go down, bring Box B up */
   }
+  .box-b{
+  	padding:1rem 0 !important;
+  }
 }
+
 #work5pres{
 	background-color: #3fcbbc;
+}
+.work-button-link{
+	padding:0 0.5rem;
+}
+.work-head-button{
+	padding:0;
+	height:inherit;
+	display: inline-flex;
+	i{
+		font-size: 3rem;
+		line-height: normal;
+	}
+}
+.work-colorline-wrap{
+	min-height: 100px;
+}
+.work-foot-wrap{
+	min-height: 100px;
+	background-color: white;
+}
+.work-pres-wrap{
+	margin-bottom:0;
 }
