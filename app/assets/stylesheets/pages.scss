@@ -780,6 +780,9 @@ textarea:focus, input:focus {
   }
   .box-a {
     order: 2; /* Go down, bring Box B up */
+    .row{
+    	padding: 0 0.5rem;
+    }
   }
   .box-b{
   	padding:1rem 0 !important;
