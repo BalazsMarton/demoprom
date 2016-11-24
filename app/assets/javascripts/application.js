@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require materialize-sprockets
 //= require mixitup
 //= require_tree .
@@ -21,29 +20,27 @@
 //jquery validacio https://jqueryvalidation.org/
 //galéria szűrés https://mixitup.kunkalabs.com/
 
-document.addEventListener("turbolinks:load", function() {
+$( document ).ready(function() {
+
   $("#work-head-body").mCustomScrollbar({
     scrollButtons:{ enable: true }
   });
-	//MATERIALIZE JS
-	//
-  //form
-  $(function(){
-    Materialize.updateTextFields();
-  });
-	// Parallax effect
-	$('.parallax').parallax();
-	// Initialize collapse button
 
-      var bg = jQuery(".element");
+        var bg = jQuery(".element");
   $(window).resize("resizeBackground");
   function resizeBackground() {
       bg.height(jQuery(window).height()-100)
     }
   resizeBackground();
-  
+	//MATERIALIZE JS
+	//
 
-	  $('.dropdown-button').dropdown({
+	// Parallax effect
+	$('.parallax').parallax();
+	// Initialize collapse button
+  $('.collapsible').collapsible();
+
+	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
       constrain_width: true, // Does not change width of dropdown to that of the activator
@@ -53,7 +50,7 @@ document.addEventListener("turbolinks:load", function() {
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     }
   );
-      $('.button-collapse').sideNav({
+  $('.button-collapse').sideNav({
       menuWidth: 200, // Default is 240
       edge: 'left', // Choose the horizontal origin
       closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
