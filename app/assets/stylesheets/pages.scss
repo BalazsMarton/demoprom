@@ -531,6 +531,7 @@ ul.gallery{
 }
 
 .work-label{
+	display:flex;
 	opacity:0;
 	transition-duration: 0.6s;
 	position:absolute;
@@ -540,7 +541,6 @@ ul.gallery{
   	top: 0;
   	height: 100%;
   	width:100%;
-  	display: none;
   	justify-content: center;
   	align-items: center;
   	border: 15px solid rgba(0,0,0,0);
@@ -552,6 +552,9 @@ ul.gallery{
   			font-size: 30px;
   			line-height: 1;
   			margin-bottom:0;
+  			a{
+  				color:white !important;
+  			}
   		}
   	}
   	img{
@@ -585,7 +588,6 @@ ul.gallery{
 }
 .work-label.active{
 	opacity:1;
-	display:flex;
 }
 
 /*RELATED*/
@@ -768,9 +770,6 @@ textarea:focus, input:focus {
     display: none; 
 	}
 }
-.work-head-wrap#work5{
-	background-image: url('/img/workshow5heading.jpg');
-}
 .box-b{
   	padding:0.5rem 2rem 0.5rem 2rem  !important;
 }
@@ -785,10 +784,6 @@ textarea:focus, input:focus {
   .box-b{
   	padding:1rem 0 !important;
   }
-}
-
-#work5pres{
-	background-color: #3fcbbc;
 }
 .work-button-link{
 	padding:0 0.5rem;
@@ -845,4 +840,28 @@ textarea:focus, input:focus {
     align-items: center;
     margin-bottom: 0;
 	min-height: 200px;
+}
+/*WORK 1*/
+#work1pres{
+	background-color: #c59321;
+}
+/*WORK 2*/
+#work2pres{
+	background-color: #538ec3;
+}
+/*WORK 3*/
+#work3pres{
+	background-color: #3ba2ad;
+}
+/*WORK 4*/
+#work4pres{
+	background-color: #d84c4c;
+}
+/*WORK 5*/
+#work5pres{
+	background-color: #3fcbbc;
+}
+/*WORK 6*/
+#work6pres{
+	background-color: #ceb490;
 }

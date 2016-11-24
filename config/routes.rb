@@ -25,6 +25,12 @@ Rails.application.routes.draw do
   get 'work4' => 'pages#work4'
   get 'work5' => 'pages#work5'
   get 'work6' => 'pages#work6'
+  get 'work7' => 'pages#work7'
+  get 'work8' => 'pages#work8'
+  get 'work9' => 'pages#work9'
+  get 'work10' => 'pages#work10'
+  get 'work11' => 'pages#work11'
+  get 'work12' => 'pages#work12'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
