@@ -22,7 +22,7 @@
 
 $( document ).ready(function() {
 
-  $("#work-head-body").mCustomScrollbar({
+  $(".mCustomScrollbar").mCustomScrollbar({
     scrollButtons:{ enable: true }
   });
 
