@@ -746,3 +746,20 @@ input, select, textarea{
 textarea:focus, input:focus {
     color: #fff;
 }
+
+/*WORK 5 BPCLEANERS*/
+.work-head-wrap#work5{
+	background-image: url('/img/workshow5heading.jpg');
+}
+@media (max-width: 768px) {
+  .flex-s {
+    display: flex;
+    flex-direction: column; /* Stack on top */
+  }
+  .box-a {
+    order: 2; /* Go down, bring Box B up */
+  }
+}
+#work5pres{
+	background-color: #3fcbbc;
+}
